@@ -11,7 +11,7 @@ function Team() {
         </header>
         <section className='flex flex-wrap gap-4 justify-center'>
             {
-                TeamData.map(data => <TeamCard name={data.name} img={data.img} job={data.job}/>)
+                TeamData.map((data, i) => <TeamCard name={data.name} img={data.img} job={data.job} key={i}/>)
             }
                 
                 

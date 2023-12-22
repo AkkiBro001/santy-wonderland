@@ -1,5 +1,6 @@
 import React from 'react'
 import BookCard from './BookCard'
+import { BookData } from '../Data/BookData'
 
 function Collection() {
   return (
@@ -8,12 +9,11 @@ function Collection() {
             Our Collection
         </header>
         <section className='flex flex-wrap gap-4 justify-center'>
-
-        <BookCard/>
-        <BookCard/>
-        <BookCard/>
-        <BookCard/>
-        <BookCard/>
+        {
+          BookData.map((book, i) => <BookCard {...book} key={i}/>)
+        }
+        
+        
         </section>
     </div>
   )

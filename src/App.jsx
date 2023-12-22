@@ -1,8 +1,9 @@
 
-import Header from './components/header'
+
 import Collection from './components/Collection'
 import Team from './components/Team'
 import Footer from './components/footer'
+import NavBar from './components/header'
 
 
 
@@ -11,7 +12,7 @@ function App() {
   return (
   
     <div className='text-black bg-slate-200 min-h-screen'>
-        <Header/>
+        <NavBar/>
         <Collection/>
         <Team/>
         <Footer/>
