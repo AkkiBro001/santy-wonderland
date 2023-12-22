@@ -2,8 +2,10 @@
 
 import Collection from './components/Collection'
 import Team from './components/Team'
-import Footer from './components/footer'
-import NavBar from './components/header'
+import Footer from './components/Footer'
+import NavBar from './components/NavBar'
+
+
 
 
 
